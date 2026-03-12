@@ -36,6 +36,8 @@ jobs:
     permissions:
       id-token: write # Required for Workload Identity Federation with GCP
     steps:
+      - name: test zizmor
+        run: echo "SOURCE=${{ inputs.source }}" >> $GITHUB_ENV
       - name: Validate inputs
         env:
           SOURCE: ${{ inputs.source }}
