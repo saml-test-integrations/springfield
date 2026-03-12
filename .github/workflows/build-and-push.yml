@@ -40,6 +40,8 @@ jobs:
       image_tag: ${{ env.TAG }}
 
     steps:
+      - name: test
+        run: echo "testing zizmor"
       - name: Reclaim disk space
         run: |
           sudo rm -rf /home/runner/.rustup
