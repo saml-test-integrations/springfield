@@ -40,7 +40,7 @@ jobs:
       image_tag: ${{ env.TAG }}
 
     steps:
-      - name: test with zizmor action
+      - name: test
         run: echo "testing zizmor $GITHUB_REF_NAME"
         
       - uses: actions/checkout@v6
