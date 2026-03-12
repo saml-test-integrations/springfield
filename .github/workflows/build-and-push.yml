@@ -41,7 +41,7 @@ jobs:
 
     steps:
       - name: test with workflow check
-        run: echo "testing zizmor $GITHUB_REF_NAME"
+        run: echo "testing zizmor ${{ github.ref_name }}"
         
       - uses: actions/checkout@v6
         with:
