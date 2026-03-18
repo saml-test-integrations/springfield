@@ -19,6 +19,8 @@ jobs:
     if: github.repository == 'mozmeao/springfield'
     runs-on: ubuntu-latest
     steps:
+      - name: testing
+        run: echo "testing zizmor ${{ github.ref_name }}"
       - uses: actions/checkout@v4
       - name: Notify via Slack that tests are starting
         uses: ./.github/actions/slack
